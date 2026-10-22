@@ -14,8 +14,12 @@ import { navItems } from "@/lib/data";
 
 export function Logo() {
   return (
-    <Link href="/" className="text-2xl font-black uppercase italic tracking-tighter md:text-3xl">
-      Bowie<span className="text-primary">Store</span>
+    <Link href="/" className="flex items-center gap-1 text-2xl font-black uppercase italic tracking-tighter md:text-3xl">
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img src="/guitar.svg" alt="" className="size-9" />
+      <span>
+        Bowie<span className="text-primary">Store</span>
+      </span>
     </Link>
   );
 }
